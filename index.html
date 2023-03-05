@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="description" content="Demo news website By Rahul Kumar">
+    <meta name="keywords" content="demo news,demo website,news websites,demo news websites">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Demo News Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="Merriweather/WD/OpenSans-Regular.ttf">
+    <link rel="stylesheet" href="Merriweather/Merriweather-Regular.ttf">
+
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <a href="index.html"><img src="images/logo3.jpg" alt="">News Demo website</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="">Home</a> </li>
+            <li><a href="">About us</a> </li>
+            <li><a href="">Contact</a> </li>
+        </ul>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click",function (){
+                if($(".nav-links").hasClass("active")){
+                    $(".nav-links").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                }else{
+                      $(".nav-links").addClass("active");
+                      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    </script>
+    <section class="news">
+     <div class="news-rows">
+        <div class="news-card">
+            <img src="images/news-img-1.webp">
+            <div class="content">
+                <h5>PayPal enables transfer of digital currencies to external wallets <br></h5>
+                <a href="news1.html" class ="hero-btn">Go to article</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news-img-2.webp">
+            <div class="content">
+                <h5>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h5>
+                <a href="news2.html" class ="hero-btn">Go to article</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news-img-3.webp">
+            <div class="content">
+                <h5>Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</h5>
+                <a href="news3.html" class ="hero-btn">Go to article</a>
+            </div>
+        </div>
+     </div>
+    </section>
+    <section class="rows1">
+        <div class="news-rows1">
+            <div class="news-card">
+                <img src="images/news-img-4.webp">
+                <div class="content">
+                    <h5>Bitcoin Miner's Revenue Hits $9.55 Billion in 2022</h5>
+                    <a href="news4.html" class ="hero-btn">Go to article</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="images/news-img-5.webp">
+                <div class="content">
+                    <h5>Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</h5>
+                    <a href="news5.html" class ="hero-btn">Go to article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>Enroll For Our  News Website <br> Anywhere From The World</h1>
+        <a href="" class="hero-btn1">Contact Us</a>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/logo3.jpg" class="logo">
+                <p>
+                    Subscribe to our News channel for more news<br>
+                    Demo News website.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div> </h3>
+                <p>Kirloskar layout</p>
+                <p>Chikbanwara, Banglore</p>
+                <p>Karnataka, PIN 560073</p>
+                <p class="email-id">rahulbajaj.rb23@gmail.com</p>
+                <h4>+91 8292770802</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contacts</a></li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                    <input type="email" placeholder=" Enter your email id" required>
+                    <button class="icon" type="submit"> <ion-icon name="send-sharp"></ion-icon></button>
+                </form>
+                <div class="social-icons">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-google"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+        <hr class="copyright">
+        <p>Made By Rahul Kumar © 2023 - All Rights Reserved</p>
+    </footer>
+<!--    <section class="footer">-->
+<!--         <h4>About us</h4>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores ipsa maiores minima molestias neque nesciunt, <br>nobis quibusdam rem rerum sapiente sequi tempore voluptate voluptatum!</p>-->
+<!--        <div class="icons">-->
+<!--            <i class="fa-brands fa-facebook-f"></i>-->
+<!--            <i class="fa-brands fa-twitter"></i>-->
+<!--            <i class="fa-brands fa-instagram"></i>-->
+
+
+<!--        </div>-->
+<!--        <p>Made with<i class="fa fa-heart-o"></i> by Rahul Bajaj </p>-->
+
+</body>
+</html>
