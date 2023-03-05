@@ -9,10 +9,11 @@ a,a:hover{
 nav{
     background: linear-gradient(to right,antiquewhite, lightblue);
     height: auto;
-    padding: 5px 10px;
+    padding: 5px;
     border: 1px solid black;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
 nav a{
     color: black;
@@ -26,13 +27,12 @@ nav a:hover{
 .logo a{
     display: flex;
     justify-items: center;
-    font-size: 40px;
-    padding-top: 5px;
+    font-size: 30px;
+    /*padding-top: 5px;*/
 }
 .logo img{
-    padding-top: 8px;
     width: 60px;
-    height: 50px;
+    height: 40px;
     margin-right: 5px;
 }
 .nav-links{
@@ -50,11 +50,11 @@ nav a:hover{
     font-size: 30px;
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     nav{
         display: block;
         position: relative;
-        padding: 15px 20px;
+        padding: 10px 10px;
     }
     .nav-links{
         margin-top: 15px;
@@ -69,7 +69,7 @@ nav a:hover{
         right: 20px;
     }
     .news-rows{
-        position: static;
+        /*position: static;*/
     }
 
 }
@@ -237,7 +237,6 @@ footer{
     width:fit-content ;
     border-bottom: 1px solid black;
     margin: 20px 0;
-
 }
 .col:nth-child(1),col:nth-child(2) p{
     font-size: 15px;
@@ -269,7 +268,7 @@ form{
 form input{
     width: 100%;
     background: transparent;
-    color:#ccc;
+    color:black;
     border: 0;
     outline: none;
 }
